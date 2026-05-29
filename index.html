@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Optimization -->
+  <title>TVK Construction Ltd | Premium Domestic Construction Services UK</title>
+  <meta name="description" content="TVK CONSTRUCTION LTD (SIC 41202) provides luxury domestic building construction, home extensions, renovations, and modern building solutions across the UK. Crafting high-end residential projects with pristine quality.">
+  <meta name="keywords" content="TVK Construction, domestic buildings construction, luxury home builders UK, residential renovations Crewe, modern extensions, house extensions Cheshire, home renovation England, premium builders UK">
+  <meta name="author" content="TVK CONSTRUCTION LTD">
+  <link rel="canonical" href="https://www.tvkconstruction.co.uk">
+  
+  <!-- OpenGraph Tags -->
+  <meta property="og:title" content="TVK Construction Ltd | Building Homes. Creating Trust.">
+  <meta property="og:description" content="Luxury residential construction, modern home extensions, and custom interiors across the UK with certified excellence.">
+  <meta property="og:image" content="assets/hero.png">
+  <meta property="og:url" content="https://www.tvkconstruction.co.uk">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon Mock -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23D4AF37%22 font-weight=%22bold%22>T</text></svg>">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            white: '#0F172A', // Map standard white to Slate-900 navy
+            gold: {
+              DEFAULT: '#1A365D', // Corporate Deep Navy Blue
+              dark: '#0B192E',    // Darker Blue for footer/borders
+              light: '#F1F5F9',   // Light architectural slate for cards
+              accent: '#2563EB'   // Royal Blue Accent
+            },
+            charcoal: {
+              DEFAULT: '#FFFFFF', // Clean White background
+              light: '#F8FAFC',   // Slate-50 Alternative background
+              lighter: '#F1F5F9', // Slate-100 Borders and Cards
+              gray: '#E2E8F0'     // Slate-200 Grid lines
+            },
+            gray: {
+              50: '#F8FAFC',
+              100: '#F1F5F9',
+              200: '#E2E8F0',
+              300: '#94A3B8',     // Muted slate gray
+              400: '#64748B',     // Sophisticated Slate-500
+              500: '#475569',     // Slate-600
+              600: '#334155',     // Slate-700
+              700: '#1E293B',     // Slate-800
+              800: '#0F172A',     // Slate-900
+              900: '#020617'
+            },
+            'white-pure': '#FFFFFF' // Pristine White for Hero, buttons, and badges
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-charcoal text-white font-body overflow-x-hidden">
+
+  <!-- 1. PROFESSIONAL LOADING SCREEN -->
+  <div id="loading-screen" class="fixed inset-0 bg-charcoal z-[9999] flex flex-col justify-center items-center transition-all duration-1000">
+    <div class="relative flex flex-col items-center">
+      <!-- Pulser badge -->
+      <div class="w-20 h-20 overflow-hidden rounded-full flex items-center justify-center badge-pulse mb-6 bg-white shadow-md border border-slate-100">
+        <img src="assets/logo.png" alt="TVK Construction Logo" class="w-full h-full object-cover scale-105">
+      </div>
+      <h2 class="text-white font-heading text-xl font-semibold tracking-[0.25em] uppercase">TVK Construction</h2>
+      <div class="w-32 h-[1px] bg-charcoal-lighter mt-4 overflow-hidden relative">
+        <div class="absolute left-0 top-0 bottom-0 bg-gold w-1/2 animate-[marquee_1.5s_linear_infinite]"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY GLASSMORPHISM NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 glass-navbar py-4 px-6 md:px-12 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="#" class="flex items-center space-x-3 group">
+      <div class="w-10 h-10 overflow-hidden flex items-center justify-center rounded bg-white shadow-sm border border-slate-200 transition-transform duration-300 group-hover:scale-105">
+        <img src="assets/logo.png" alt="TVK Construction Logo" class="w-full h-full object-cover">
+      </div>
+      <div>
+        <span class="text-white font-heading text-lg font-bold tracking-wider block leading-none">TVK</span>
+        <span class="text-[9px] text-gold-accent tracking-[0.2em] font-semibold uppercase leading-none block mt-1">CONSTRUCTION</span>
+      </div>
+    </a>
+
+    <!-- Nav Links (Desktop) -->
+    <div class="hidden lg:flex items-center space-x-8 text-sm font-medium tracking-wide">
+      <a href="#hero" class="text-white hover:text-gold-accent link-gold-underline py-2">Home</a>
+      <a href="#about" class="text-white hover:text-gold-accent link-gold-underline py-2">About</a>
+      <a href="#services" class="text-white hover:text-gold-accent link-gold-underline py-2">Services</a>
+      <a href="#portfolio" class="text-white hover:text-gold-accent link-gold-underline py-2">Projects</a>
+      <a href="#why-choose" class="text-white hover:text-gold-accent link-gold-underline py-2">Why Us</a>
+      <a href="#process" class="text-white hover:text-gold-accent link-gold-underline py-2">Process</a>
+      <a href="#faq" class="text-white hover:text-gold-accent link-gold-underline py-2">FAQs</a>
+      <a href="#blog" class="text-white hover:text-gold-accent link-gold-underline py-2">Blog</a>
+      <a href="#contact" class="text-white hover:text-gold-accent link-gold-underline py-2">Contact</a>
+    </div>
+
+    <!-- Right Actions -->
+    <div class="hidden lg:flex items-center space-x-6">
+      <a href="tel:07345952724" class="text-white hover:text-gold-accent text-sm font-semibold flex items-center space-x-2">
+        <!-- Phone SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+        <span>073459 52724</span>
+      </a>
+      <button onclick="toggleQuoteModal(true)" class="border border-gold text-gold hover:bg-gold hover:text-white-pure px-5 py-2.5 rounded font-heading text-xs uppercase tracking-wider font-semibold transition-all duration-300">
+        Get Free Quote
+      </button>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="lg:hidden text-white hover:text-gold focus:outline-none" aria-label="Toggle mobile menu">
+      <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+      <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="absolute top-[73px] left-0 right-0 bg-charcoal-light border-b border-charcoal-lighter flex-col py-6 px-8 space-y-4 text-left hidden shadow-2xl transition-all duration-300">
+      <a href="#hero" class="mobile-nav-link text-white hover:text-gold block py-2 border-b border-charcoal/50 text-base">Home</a>
+      <a href="#about" class="mobile-nav-link text-white hover:text-gold block py-2 border-b border-charcoal/50 text-base">About Us</a>
+      <a href="#services" class="mobile-nav-link text-white hover:text-gold block py-2 border-b border-charcoal/50 text-base">Services</a>
+      <a href="#portfolio" class="mobile-nav-link text-white hover:text-gold block py-2 border-b border-charcoal/50 text-base">Our Projects</a>
+      <a href="#why-choose" class="mobile-nav-link text-white hover:text-gold block py-2 border-b border-charcoal/50 text-base">Why Choose Us</a>
+      <a href="#process" class="mobile-nav-link text-white hover:text-gold block py-2 border-b border-charcoal/50 text-base">Our Process</a>
+      <a href="#faq" class="mobile-nav-link text-white hover:text-gold block py-2 border-b border-charcoal/50 text-base">FAQs</a>
+      <a href="#blog" class="mobile-nav-link text-white hover:text-gold block py-2 border-b border-charcoal/50 text-base">Blog & Insights</a>
+      <a href="#contact" class="mobile-nav-link text-white hover:text-gold block py-2 border-b border-charcoal/50 text-base">Contact Us</a>
+      <div class="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <a href="tel:07345952724" class="text-white hover:text-gold text-sm font-semibold flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <span>073459 52724</span>
+        </a>
+        <button onclick="toggleQuoteModal(true)" class="border border-gold text-gold hover:bg-gold hover:text-charcoal px-5 py-2.5 rounded font-heading text-xs uppercase tracking-wider font-semibold transition-all duration-300 w-full sm:w-auto text-center">
+          Get Free Quote
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1. FULLSCREEN HERO SECTION -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden bg-cover bg-center" style="background-image: url('assets/hero.png');">
+    <!-- Bright premium architectural overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-white-pure/95 via-white-pure/70 to-transparent"></div>
+    <div class="absolute inset-0 bg-white-pure/25"></div>
+
+    <div class="container mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+      <!-- Title & Headline -->
+      <div class="lg:col-span-7 space-y-6 text-left">
+        <div class="inline-flex items-center space-x-2 bg-gold/5 border border-gold/20 px-3.5 py-1.5 rounded-full scroll-reveal">
+          <span class="w-2 h-2 rounded-full bg-gold-accent animate-pulse"></span>
+          <span class="text-gold-accent text-xs uppercase tracking-[0.2em] font-semibold">TVK Construction</span>
+        </div>
+        
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold tracking-tight text-gold leading-[1.05] scroll-reveal delay-100">
+          Building Homes.<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-accent via-blue-600 to-gold">Creating Trust.</span>
+        </h1>
+        
+        <p class="text-base md:text-lg text-slate-700 max-w-xl leading-relaxed scroll-reveal delay-200">
+          Premium domestic construction services across the UK. Delivering quality craftsmanship, modern building extensions, and bespoke residential solutions designed to last a lifetime.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap gap-4 pt-4 scroll-reveal delay-300">
+          <button onclick="toggleQuoteModal(true)" class="bg-gradient-to-r from-gold to-gold-accent hover:from-gold-accent hover:to-gold-dark text-white-pure font-heading text-sm uppercase tracking-wider font-bold px-8 py-4 rounded shadow-xl hover:shadow-gold/20 transition-all duration-300 transform hover:-translate-y-0.5">
+            Get Free Quote
+          </button>
+          <a href="#portfolio" class="border border-gold/30 hover:border-gold hover:bg-gold hover:text-white-pure text-gold font-heading text-sm uppercase tracking-wider font-bold px-8 py-4 rounded bg-gold/5 backdrop-blur-sm transition-all duration-300 transform hover:-translate-y-0.5">
+            View Projects
+          </a>
+        </div>
+      </div>
+
+      <!-- Floating stats cards & interactive features -->
+      <div class="lg:col-span-5 flex flex-col space-y-6 relative scroll-reveal-right">
+        <!-- Floating Card 1 -->
+        <div class="glass-premium p-6 rounded-xl relative flex items-center space-x-5 transform hover:scale-[1.02] transition-transform duration-300">
+          <div class="w-14 h-14 bg-gold/5 border border-gold/15 rounded-lg flex items-center justify-center text-gold-accent">
+            <!-- House SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+          </div>
+          <div>
+            <span class="text-[10px] text-gold-accent tracking-widest font-semibold uppercase block">Residential Expertise</span>
+            <span class="text-xl font-heading font-bold text-white block mt-0.5">High-End Bespoke Building</span>
+          </div>
+          <div class="absolute top-2 right-2 text-gold/5 font-bold font-heading text-4xl">01</div>
+        </div>
+
+        <!-- Floating Card 2 -->
+        <div class="glass-premium p-6 rounded-xl relative flex items-center space-x-5 transform hover:scale-[1.02] transition-transform duration-300 ml-0 lg:ml-6">
+          <div class="w-14 h-14 bg-gold/5 border border-gold/15 rounded-lg flex items-center justify-center text-gold-accent">
+            <!-- Shield Check SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <div>
+            <span class="text-[10px] text-gold-accent tracking-widest font-semibold uppercase block">UK Standards Checked</span>
+            <span class="text-xl font-heading font-bold text-white block mt-0.5">Full Building Regulations</span>
+          </div>
+          <div class="absolute top-2 right-2 text-gold/5 font-bold font-heading text-4xl">02</div>
+        </div>
+
+        <!-- Floating Card 3 -->
+        <div class="glass-premium p-6 rounded-xl relative flex items-center space-x-5 transform hover:scale-[1.02] transition-transform duration-300">
+          <div class="w-14 h-14 bg-gold/5 border border-gold/15 rounded-lg flex items-center justify-center text-gold-accent">
+            <!-- Sparkles SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <div>
+            <span class="text-[10px] text-gold-accent tracking-widest font-semibold uppercase block">Craftsmanship Guarantee</span>
+            <span class="text-xl font-heading font-bold text-white block mt-0.5">Premier Finished Quality</span>
+          </div>
+          <div class="absolute top-2 right-2 text-gold/5 font-bold font-heading text-4xl">03</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Animated mouse scroll helper -->
+    <a href="#about" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 hidden lg:flex flex-col items-center group">
+      <span class="text-[10px] tracking-[0.25em] text-white-pure/60 uppercase group-hover:text-blue-300 transition-colors duration-300">Explore</span>
+      <div class="w-5 h-8 border border-white-pure/20 rounded-full flex justify-center mt-2 group-hover:border-blue-400 transition-colors duration-300">
+        <div class="w-1 h-2 bg-blue-400 rounded-full mt-1.5 animate-bounce"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- 2. ABOUT COMPANY SECTION -->
+  <section id="about" class="py-24 bg-charcoal-light relative">
+    <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      
+      <!-- Side Image (visual asset generated by model) -->
+      <div class="lg:col-span-6 relative scroll-reveal-left">
+        <div class="relative rounded-2xl overflow-hidden border border-gold/15 shadow-2xl">
+          <img src="assets/about.png" alt="TVK Construction Site Blueprints Team" class="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal to-transparent opacity-60"></div>
+        </div>
+        
+        <!-- absolute floating badge -->
+        <div class="absolute -bottom-6 -right-6 md:right-6 glass-premium p-6 rounded-xl flex items-center space-x-4 border border-gold/15 shadow-2xl">
+          <div class="text-4xl md:text-5xl font-heading font-extrabold text-gold">UK</div>
+          <div class="text-xs uppercase tracking-widest font-semibold leading-tight text-white">
+            Registered<br>Domestic<br>Builder
+          </div>
+        </div>
+      </div>
+
+      <!-- Text & Counters -->
+      <div class="lg:col-span-6 space-y-6 text-left scroll-reveal-right">
+        <span class="text-xs text-gold-accent font-heading font-bold uppercase tracking-[0.25em] block">Legacy of Craftsmanship</span>
+        <h2 class="text-3xl md:text-5xl font-heading font-bold text-white tracking-tight leading-tight">
+          Pioneering Premium Domestic Construction
+        </h2>
+        <div class="h-1 w-20 bg-gold"></div>
+        
+        <p class="text-gray-600 leading-relaxed text-base">
+          TVK CONSTRUCTION LTD specializes in high-end domestic building construction, full-scale structural extensions, interior remodels, and modern residential developments across the United Kingdom.
+        </p>
+        
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Registered in England with SIC Code 41202, our approach remains grounded in safety, transparent consultation, absolute building standard compliance, and client-first priorities. We combine certified engineering team execution with the finest building materials to elevate every living space.
+        </p>
+
+        <!-- Corporate Credentials Grid (Replaces old stats counters) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-charcoal-lighter">
+          <!-- Credential 1 -->
+          <div class="flex items-start space-x-3.5">
+            <div class="text-gold mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5" />
+              </svg>
+            </div>
+            <div class="text-left space-y-0.5">
+              <h4 class="text-xs md:text-sm font-heading font-bold text-white tracking-wide uppercase">UK Registered Entity</h4>
+              <p class="text-gray-500 text-xs leading-normal font-medium">Officially incorporated domestic builder under SIC Code 41202.</p>
+            </div>
+          </div>
+
+          <!-- Credential 2 -->
+          <div class="flex items-start space-x-3.5">
+            <div class="text-gold mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <div class="text-left space-y-0.5">
+              <h4 class="text-xs md:text-sm font-heading font-bold text-white tracking-wide uppercase">Fully Insured Works</h4>
+              <p class="text-gray-500 text-xs leading-normal font-medium">Complete public and employer's liability insurance up to £5M.</p>
+            </div>
+          </div>
+
+          <!-- Credential 3 -->
+          <div class="flex items-start space-x-3.5">
+            <div class="text-gold mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              </svg>
+            </div>
+            <div class="text-left space-y-0.5">
+              <h4 class="text-xs md:text-sm font-heading font-bold text-white tracking-wide uppercase">Cheshire East Compliance</h4>
+              <p class="text-gray-500 text-xs leading-normal font-medium">Certified permit planning matching Crewe building councils.</p>
+            </div>
+          </div>
+
+          <!-- Credential 4 -->
+          <div class="flex items-start space-x-3.5">
+            <div class="text-gold mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2" />
+              </svg>
+            </div>
+            <div class="text-left space-y-0.5">
+              <h4 class="text-xs md:text-sm font-heading font-bold text-white tracking-wide uppercase">Stage-Gate Payments</h4>
+              <p class="text-gray-500 text-xs leading-normal font-medium">Budgets itemized and triggered only after verified milestones.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mini features list -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-xs font-semibold tracking-wide">
+          <div class="flex items-center space-x-2 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Fully UK Insured & Certified</span>
+          </div>
+          <div class="flex items-center space-x-2 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Premium Imported Timber & Stones</span>
+          </div>
+          <div class="flex items-center space-x-2 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Strictest Safety Standards</span>
+          </div>
+          <div class="flex items-center space-x-2 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Compliant Planning Supports</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. SERVICES SECTION -->
+  <section id="services" class="py-24 bg-charcoal relative">
+    <div class="container mx-auto px-6 md:px-12 text-center space-y-12">
+      <!-- Section header -->
+      <div class="space-y-4 max-w-3xl mx-auto scroll-reveal">
+        <span class="text-xs text-gold font-heading font-bold uppercase tracking-[0.25em] block">Our Offerings</span>
+        <h2 class="text-3xl md:text-5xl font-heading font-bold text-white tracking-tight">
+          Elite Architectural Construction Services
+        </h2>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          From foundation works to high-end structural finishes, we provide a complete suite of services tailored to premium domestic properties in the UK.
+        </p>
+      </div>
+
+      <!-- Services Grid (8 cards) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Card 1: New Home Construction -->
+        <div class="glass-card p-8 rounded-xl flex flex-col justify-between text-left relative overflow-hidden group scroll-reveal">
+          <div class="space-y-5">
+            <div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-lg flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-charcoal transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">New Home Construction</h3>
+            <p class="text-gray-400 text-xs leading-relaxed transition-all duration-300">
+              Full turn-key luxury house builds from structural foundations to flawless custom interior handover.
+            </p>
+            <div class="hidden-details text-xs text-gray-500 max-h-0 overflow-hidden transition-all duration-500 space-y-2">
+              <p>We work closely with structural engineers and design planners to map out your perfect home footprint, ensuring UK Building Regulations approval at every critical inspection milestone.</p>
+            </div>
+          </div>
+          <button onclick="toggleServiceDetails(this)" class="text-xs text-gold font-bold tracking-wider uppercase mt-6 flex items-center space-x-1 hover:text-gold-accent transition-colors">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Card 2: House Extensions -->
+        <div class="glass-card p-8 rounded-xl flex flex-col justify-between text-left relative overflow-hidden group scroll-reveal delay-100">
+          <div class="space-y-5">
+            <div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-lg flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-charcoal transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">House Extensions</h3>
+            <p class="text-gray-400 text-xs leading-relaxed transition-all duration-300">
+              Bespoke rear, side, double-storey, or wraps to expand your domestic footprint seamlessly.
+            </p>
+            <div class="hidden-details text-xs text-gray-500 max-h-0 overflow-hidden transition-all duration-500 space-y-2">
+              <p>Maximize your property value. We integrate load-bearing steelworks, structural joists, high-performance glazing, and matching bricks to match your home’s character.</p>
+            </div>
+          </div>
+          <button onclick="toggleServiceDetails(this)" class="text-xs text-gold font-bold tracking-wider uppercase mt-6 flex items-center space-x-1 hover:text-gold-accent transition-colors">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Card 3: Interior Renovation -->
+        <div class="glass-card p-8 rounded-xl flex flex-col justify-between text-left relative overflow-hidden group scroll-reveal delay-200">
+          <div class="space-y-5">
+            <div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-lg flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-charcoal transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Interior Renovation</h3>
+            <p class="text-gray-400 text-xs leading-relaxed transition-all duration-300">
+              High-end luxury custom finishes, walls refitting, insulation, drylining, and premium floorings.
+            </p>
+            <div class="hidden-details text-xs text-gray-500 max-h-0 overflow-hidden transition-all duration-500 space-y-2">
+              <p>From complete structural strip-outs to elegant plastering, underfloor heating installations, luxury oak floor laying, and high-performance partition configurations.</p>
+            </div>
+          </div>
+          <button onclick="toggleServiceDetails(this)" class="text-xs text-gold font-bold tracking-wider uppercase mt-6 flex items-center space-x-1 hover:text-gold-accent transition-colors">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Card 4: Kitchen Remodeling -->
+        <div class="glass-card p-8 rounded-xl flex flex-col justify-between text-left relative overflow-hidden group scroll-reveal delay-300">
+          <div class="space-y-5">
+            <div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-lg flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-charcoal transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Kitchen Remodeling</h3>
+            <p class="text-gray-400 text-xs leading-relaxed transition-all duration-300">
+              Stunning modern open-concept space creation, marble kitchen island setups, gold fittings.
+            </p>
+            <div class="hidden-details text-xs text-gray-500 max-h-0 overflow-hidden transition-all duration-500 space-y-2">
+              <p>Our bespoke carpentry, structural plumbing updates, and exquisite countertop integrations create a luxury hub for culinary experiences and family entertainment.</p>
+            </div>
+          </div>
+          <button onclick="toggleServiceDetails(this)" class="text-xs text-gold font-bold tracking-wider uppercase mt-6 flex items-center space-x-1 hover:text-gold-accent transition-colors">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Card 5: Roofing Services -->
+        <div class="glass-card p-8 rounded-xl flex flex-col justify-between text-left relative overflow-hidden group scroll-reveal">
+          <div class="space-y-5">
+            <div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-lg flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-charcoal transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Roofing Services</h3>
+            <p class="text-gray-400 text-xs leading-relaxed transition-all duration-300">
+              Full slate and tile roofing, premium flat-roof membranes, guttering, and high insulation.
+            </p>
+            <div class="hidden-details text-xs text-gray-500 max-h-0 overflow-hidden transition-all duration-500 space-y-2">
+              <p>Comprehensive weatherproofing using high-end slates, modern warm roof architectures, breathable felts, lead flashing works, and deep flow gutter systems.</p>
+            </div>
+          </div>
+          <button onclick="toggleServiceDetails(this)" class="text-xs text-gold font-bold tracking-wider uppercase mt-6 flex items-center space-x-1 hover:text-gold-accent transition-colors">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Card 6: Structural Repairs -->
+        <div class="glass-card p-8 rounded-xl flex flex-col justify-between text-left relative overflow-hidden group scroll-reveal delay-100">
+          <div class="space-y-5">
+            <div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-lg flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-charcoal transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Structural Repairs</h3>
+            <p class="text-gray-400 text-xs leading-relaxed transition-all duration-300">
+              Precision lintel installations, underpinning, foundation checks, and load-bearing steelwork.
+            </p>
+            <div class="hidden-details text-xs text-gray-500 max-h-0 overflow-hidden transition-all duration-500 space-y-2">
+              <p>Ensuring domestic safety. We rectify masonry cracks, reinforce historic brickworks, inject modern damp proofs, and swap failing wooden structures with steel supports.</p>
+            </div>
+          </div>
+          <button onclick="toggleServiceDetails(this)" class="text-xs text-gold font-bold tracking-wider uppercase mt-6 flex items-center space-x-1 hover:text-gold-accent transition-colors">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Card 7: Plumbing & Electrical -->
+        <div class="glass-card p-8 rounded-xl flex flex-col justify-between text-left relative overflow-hidden group scroll-reveal delay-200">
+          <div class="space-y-5">
+            <div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-lg flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-charcoal transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Plumbing & Electrical</h3>
+            <p class="text-gray-400 text-xs leading-relaxed transition-all duration-300">
+              Certificated domestic rewires, designer radiators, heating plans, and modern smart-home layouts.
+            </p>
+            <div class="hidden-details text-xs text-gray-500 max-h-0 overflow-hidden transition-all duration-500 space-y-2">
+              <p>Executed by fully certified specialists. We construct clean-loop domestic boiler pipelines, solar-panel integration interfaces, structured cat6 wires, and custom luxury lighting.</p>
+            </div>
+          </div>
+          <button onclick="toggleServiceDetails(this)" class="text-xs text-gold font-bold tracking-wider uppercase mt-6 flex items-center space-x-1 hover:text-gold-accent transition-colors">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Card 8: Modern Architecture -->
+        <div class="glass-card p-8 rounded-xl flex flex-col justify-between text-left relative overflow-hidden group scroll-reveal delay-300">
+          <div class="space-y-5">
+            <div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-lg flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-charcoal transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Modern Architecture</h3>
+            <p class="text-gray-400 text-xs leading-relaxed transition-all duration-300">
+              High-end drawing support, planning applications, 3D render assessments, and local UK council permissions.
+            </p>
+            <div class="hidden-details text-xs text-gray-500 max-h-0 overflow-hidden transition-all duration-500 space-y-2">
+              <p>Bridge the gap between vision and structural reality. We collaborate with architects to verify material load capabilities and coordinate smooth permit acquisitions.</p>
+            </div>
+          </div>
+          <button onclick="toggleServiceDetails(this)" class="text-xs text-gold font-bold tracking-wider uppercase mt-6 flex items-center space-x-1 hover:text-gold-accent transition-colors">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. FEATURED PROJECTS PORTFOLIO (WITH BEFORE/AFTER SLIDER) -->
+  <section id="portfolio" class="py-24 bg-charcoal-light relative">
+    <div class="container mx-auto px-6 md:px-12 space-y-12">
+      
+      <!-- Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 scroll-reveal">
+        <div class="space-y-4 text-left">
+          <span class="text-xs text-gold font-heading font-bold uppercase tracking-[0.25em] block">Our Portfolio</span>
+          <h2 class="text-3xl md:text-5xl font-heading font-bold text-white tracking-tight">
+            Exquisite Design In Concrete & Wood
+          </h2>
+          <div class="h-1 w-20 bg-gold"></div>
+        </div>
+
+        <!-- Filter Categories Tabs -->
+        <div id="portfolio-filters" class="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-wider">
+          <button onclick="filterPortfolio('all')" class="portfolio-filter-btn px-5 py-2.5 rounded bg-gold text-charcoal border border-gold font-bold transition-all duration-300">All Projects</button>
+          <button onclick="filterPortfolio('villas')" class="portfolio-filter-btn px-5 py-2.5 rounded bg-transparent text-white border border-white/10 hover:border-gold hover:text-gold transition-all duration-300">Modern Villas</button>
+          <button onclick="filterPortfolio('residential')" class="portfolio-filter-btn px-5 py-2.5 rounded bg-transparent text-white border border-white/10 hover:border-gold hover:text-gold transition-all duration-300">Residential Homes</button>
+          <button onclick="filterPortfolio('renovation')" class="portfolio-filter-btn px-5 py-2.5 rounded bg-transparent text-white border border-white/10 hover:border-gold hover:text-gold transition-all duration-300">Apartment Renovation</button>
+          <button onclick="filterPortfolio('interiors')" class="portfolio-filter-btn px-5 py-2.5 rounded bg-transparent text-white border border-white/10 hover:border-gold hover:text-gold transition-all duration-300">Luxury Interiors</button>
+        </div>
+      </div>
+
+      <!-- Masonry Showcase Grid -->
+      <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 scroll-reveal delay-150">
+        
+        <!-- Project 1: Modern Villa -->
+        <div class="portfolio-item villas group relative rounded-xl overflow-hidden border border-white/5 bg-charcoal aspect-[4/3] transition-all duration-500">
+          <img src="assets/uploaded_image_1.png" alt="Luxury Modern Villa Twilight UK" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent opacity-90"></div>
+          <div class="absolute bottom-6 left-6 space-y-2">
+            <span class="px-2.5 py-1 rounded bg-gold/10 text-gold border border-gold/20 text-[10px] uppercase font-bold tracking-widest">Modern Villas</span>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">The Glass Facade Villa</h3>
+            <p class="text-gray-300 text-[10px] max-w-xs">Premium concrete architectural structure integrated with custom twilight glowing fittings in Cheshire.</p>
+          </div>
+        </div>
+
+        <!-- Project 2: Residential Extension -->
+        <div class="portfolio-item residential group relative rounded-xl overflow-hidden border border-white/5 bg-charcoal aspect-[4/3] transition-all duration-500">
+          <img src="assets/uploaded_image_2.png" alt="Luxury Glass Kitchen Extension UK" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent opacity-90"></div>
+          <div class="absolute bottom-6 left-6 space-y-2">
+            <span class="px-2.5 py-1 rounded bg-gold/10 text-gold border border-gold/20 text-[10px] uppercase font-bold tracking-widest">Residential Homes</span>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Double-Height Glass Rear Extension</h3>
+            <p class="text-gray-300 text-[10px] max-w-xs">Seamless modern extension adding luxurious spacious kitchen layout with customized steel support framework in Crewe.</p>
+          </div>
+        </div>
+
+        <!-- Project 3: Apartment Renovation -->
+        <div class="portfolio-item renovation group relative rounded-xl overflow-hidden border border-white/5 bg-charcoal aspect-[4/3] transition-all duration-500">
+          <img src="assets/uploaded_image_3.png" alt="Contemporary Apartment Retrofit" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent opacity-90"></div>
+          <div class="absolute bottom-6 left-6 space-y-2">
+            <span class="px-2.5 py-1 rounded bg-gold/10 text-gold border border-gold/20 text-[10px] uppercase font-bold tracking-widest">Apartment Renovation</span>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Contemporary Apartment Retrofit</h3>
+            <p class="text-gray-300 text-[10px] max-w-xs">High-end residential apartment strip-out and structural drylining installation in Manchester.</p>
+          </div>
+        </div>
+
+        <!-- Project 4: Luxury Interior -->
+        <div class="portfolio-item interiors group relative rounded-xl overflow-hidden border border-white/5 bg-charcoal aspect-[4/3] transition-all duration-500">
+          <img src="assets/uploaded_image_4.png" alt="Minimalist Marble Kitchen Lounge" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent opacity-90"></div>
+          <div class="absolute bottom-6 left-6 space-y-2">
+            <span class="px-2.5 py-1 rounded bg-gold/10 text-gold border border-gold/20 text-[10px] uppercase font-bold tracking-widest">Luxury Interiors</span>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Minimalist Marble Lounge</h3>
+            <p class="text-gray-300 text-[10px] max-w-xs">Exquisite marble kitchen island setup, premium brass taps, and custom under-cabinet gold lighting arrays.</p>
+          </div>
+        </div>
+
+        <!-- Project 5: Modern Villa 2 -->
+        <div class="portfolio-item villas group relative rounded-xl overflow-hidden border border-white/5 bg-charcoal aspect-[4/3] transition-all duration-500">
+          <img src="assets/uploaded_image_5.png" alt="Oak Clad Architectural Retreat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent opacity-90"></div>
+          <div class="absolute bottom-6 left-6 space-y-2">
+            <span class="px-2.5 py-1 rounded bg-gold/10 text-gold border border-gold/20 text-[10px] uppercase font-bold tracking-widest">Modern Villas</span>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Oak Clad Timber Retreat</h3>
+            <p class="text-gray-300 text-[10px] max-w-xs">Bespoke luxury double-storey estate using premium imported cedar cladding and sliding patio systems.</p>
+          </div>
+        </div>
+
+        <!-- Project 6: Residential Home 2 -->
+        <div class="portfolio-item residential group relative rounded-xl overflow-hidden border border-white/5 bg-charcoal aspect-[4/3] transition-all duration-500">
+          <img src="assets/uploaded_image_6.png" alt="Heritage Brick Barn Conversion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent opacity-90"></div>
+          <div class="absolute bottom-6 left-6 space-y-2">
+            <span class="px-2.5 py-1 rounded bg-gold/10 text-gold border border-gold/20 text-[10px] uppercase font-bold tracking-widest">Residential Homes</span>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Heritage Barn Conversion</h3>
+            <p class="text-gray-300 text-[10px] max-w-xs">Restoring historic structural masonry works and integrating energy-efficient underfloor heating networks.</p>
+          </div>
+        </div>
+
+        <!-- Project 7: Apartment Renovation 2 -->
+        <div class="portfolio-item renovation group relative rounded-xl overflow-hidden border border-white/5 bg-charcoal aspect-[4/3] transition-all duration-500">
+          <img src="assets/uploaded_image_7.png" alt="Open-Concept Living Space Restoration" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent opacity-90"></div>
+          <div class="absolute bottom-6 left-6 space-y-2">
+            <span class="px-2.5 py-1 rounded bg-gold/10 text-gold border border-gold/20 text-[10px] uppercase font-bold tracking-widest">Apartment Renovation</span>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Open-Concept Living Area</h3>
+            <p class="text-gray-300 text-[10px] max-w-xs">Full drylining, soundproofing partitions, and elegant customized plastering works in modern apartment.</p>
+          </div>
+        </div>
+
+        <!-- Project 8: Luxury Interior 2 -->
+        <div class="portfolio-item interiors group relative rounded-xl overflow-hidden border border-white/5 bg-charcoal aspect-[4/3] transition-all duration-500">
+          <img src="assets/uploaded_image_8.png" alt="Sleek Underfloor-Heated Bathroom" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent opacity-90"></div>
+          <div class="absolute bottom-6 left-6 space-y-2">
+            <span class="px-2.5 py-1 rounded bg-gold/10 text-gold border border-gold/20 text-[10px] uppercase font-bold tracking-widest">Luxury Interiors</span>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Sleek Heated Bathroom</h3>
+            <p class="text-gray-300 text-[10px] max-w-xs">Italian slate tiling, rainfall overhead shower pipeline, smart humidity check, and designer radiator racks.</p>
+          </div>
+        </div>
+
+        <!-- Project 9: Modern Villa 3 -->
+        <div class="portfolio-item villas group relative rounded-xl overflow-hidden border border-white/5 bg-charcoal aspect-[4/3] transition-all duration-500">
+          <img src="assets/uploaded_image_9.png" alt="Contemporary Cliffside Estate" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent opacity-90"></div>
+          <div class="absolute bottom-6 left-6 space-y-2">
+            <span class="px-2.5 py-1 rounded bg-gold/10 text-gold border border-gold/20 text-[10px] uppercase font-bold tracking-widest">Modern Villas</span>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Contemporary Cliffside Estate</h3>
+            <p class="text-gray-300 text-[10px] max-w-xs">Advanced cliffside architectural design, structural concrete piling, and floor-to-ceiling glass layout panels.</p>
+          </div>
+        </div>
+
+        <!-- Project 10: Residential Home 3 -->
+        <div class="portfolio-item residential group relative rounded-xl overflow-hidden border border-white/5 bg-charcoal aspect-[4/3] transition-all duration-500">
+          <img src="assets/uploaded_image_10.png" alt="Urban Double-Storey Side Loft" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent opacity-90"></div>
+          <div class="absolute bottom-6 left-6 space-y-2">
+            <span class="px-2.5 py-1 rounded bg-gold/10 text-gold border border-gold/20 text-[10px] uppercase font-bold tracking-widest">Residential Homes</span>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Double-Storey Urban Loft</h3>
+            <p class="text-gray-300 text-[10px] max-w-xs">Double-height structural framework adding highly spacious interior bedroom partitions and skylights in Birmingham.</p>
+          </div>
+        </div>
+
+        <!-- Project 11: Apartment Renovation 3 -->
+        <div class="portfolio-item renovation group relative rounded-xl overflow-hidden border border-white/5 bg-charcoal aspect-[4/3] transition-all duration-500">
+          <img src="assets/uploaded_image_11.png" alt="Historic Conservatory Rebuild" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent opacity-90"></div>
+          <div class="absolute bottom-6 left-6 space-y-2">
+            <span class="px-2.5 py-1 rounded bg-gold/10 text-gold border border-gold/20 text-[10px] uppercase font-bold tracking-widest">Apartment Renovation</span>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Historic Conservatory Rebuild</h3>
+            <p class="text-gray-300 text-[10px] max-w-xs">Converting worn outdated single-skin structures to modern thermodynamic insulated glass conservatories.</p>
+          </div>
+        </div>
+
+        <!-- Project 12: Luxury Interior 3 -->
+        <div class="portfolio-item interiors group relative rounded-xl overflow-hidden border border-white/5 bg-charcoal aspect-[4/3] transition-all duration-500">
+          <img src="assets/uploaded_image_12.png" alt="Bespoke Luxury Walk-in Wardrobe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent opacity-90"></div>
+          <div class="absolute bottom-6 left-6 space-y-2">
+            <span class="px-2.5 py-1 rounded bg-gold/10 text-gold border border-gold/20 text-[10px] uppercase font-bold tracking-widest">Luxury Interiors</span>
+            <h3 class="text-lg font-heading font-bold text-white tracking-wide">Bespoke Walk-in Wardrobe</h3>
+            <p class="text-gray-300 text-[10px] max-w-xs">Custom geometric walnut shelving units, premium integrated LED sensor rails, and soft vanity lounges.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Before/After Interactive Comparative Widget -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center pt-12 border-t border-charcoal-lighter">
+        <div class="lg:col-span-5 space-y-5 text-left scroll-reveal">
+          <span class="text-xs text-gold font-heading font-bold uppercase tracking-[0.25em] block font-semibold">Renovation Showcase</span>
+          <h3 class="text-2xl md:text-4xl font-heading font-bold text-white tracking-tight leading-tight">
+            Witness the TVK Transformaton
+          </h3>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Drag the gold slider handle to compare an outdated domestic kitchen against our luxury modern white-marble open-concept renovation from the exact same structural angle.
+          </p>
+          <div class="space-y-3 pt-2 text-xs text-gray-400">
+            <div class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <span>Before: Outdated cabinetry, dim lights, worn flooring.</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <span>After: White marble island, gold fittings, oak boards, sliding patio.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 scroll-reveal-right">
+          <!-- Before/After Slider Component -->
+          <div id="before-after-slider" class="ba-slider-container w-full h-[350px] sm:h-[450px]">
+            <!-- Before Image -->
+            <div class="ba-image-before" style="background-image: url('assets/portfolio_before.png');"></div>
+            <!-- After Image -->
+            <div class="ba-image-after" style="background-image: url('assets/portfolio_after.png');"></div>
+            
+            <!-- Handle -->
+            <div class="ba-slider-handle" id="ba-handle">
+              <div class="ba-slider-handle-button">
+                <!-- Double Arrow SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l-3 3 3 3m8-6l3 3-3 3" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Labels -->
+            <div class="ba-label ba-label-before">Before</div>
+            <div class="ba-label ba-label-after">After Renovation</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. WHY CHOOSE US SECTION -->
+  <section id="why-choose" class="py-24 bg-charcoal-light relative">
+    <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      
+      <!-- Text & Progress bars -->
+      <div class="lg:col-span-6 space-y-6 text-left scroll-reveal-left">
+        <span class="text-xs text-gold-accent font-heading font-bold uppercase tracking-[0.25em] block">Certified Excellence</span>
+        <h2 class="text-3xl md:text-5xl font-heading font-bold text-white tracking-tight">
+          Uncompromised Quality in Every Joint
+        </h2>
+        <div class="h-1 w-20 bg-gold"></div>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          TVK CONSTRUCTION LTD is dedicated to building luxury domestic estates that reflect refined British architecture, safety parameters, and custom craftsmanship standards. 
+        </p>
+
+        <!-- Corporate Credentials List -->
+        <div class="space-y-6 pt-6 border-t border-charcoal-lighter">
+          <!-- Item 1 -->
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold/5 border border-gold/15 flex items-center justify-center text-gold-accent mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+              </svg>
+            </div>
+            <div class="text-left space-y-1">
+              <h4 class="text-sm font-heading font-bold text-white tracking-wide">UK Structural Compliance</h4>
+              <p class="text-gray-500 text-xs leading-relaxed">
+                Every domestic extension and residential framework complies strictly with the **UK Building Regulations Framework** and certified steel calculations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold/5 border border-gold/15 flex items-center justify-center text-gold-accent mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+              </svg>
+            </div>
+            <div class="text-left space-y-1">
+              <h4 class="text-sm font-heading font-bold text-white tracking-wide">End-to-End Project Management</h4>
+              <p class="text-gray-500 text-xs leading-relaxed">
+                We manage all custom architectural blueprint checks, planning permission requests, and staged inspection milestones on your behalf.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold/5 border border-gold/15 flex items-center justify-center text-gold-accent mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+              </svg>
+            </div>
+            <div class="text-left space-y-1">
+              <h4 class="text-sm font-heading font-bold text-white tracking-wide">Accredited Building Craftsmen</h4>
+              <p class="text-gray-500 text-xs leading-relaxed">
+                All structural works, mechanical loops, and electrical wiring are built exclusively by certified, highly trained UK tradespeople.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Icon cards timeline list -->
+      <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6 scroll-reveal-right">
+        
+        <!-- Card 1 -->
+        <div class="glass-premium p-6 rounded-xl space-y-3 text-left">
+          <div class="text-gold w-10 h-10 bg-gold/10 rounded flex items-center justify-center border border-gold/20">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+          </div>
+          <h3 class="text-white font-heading font-bold text-base tracking-wide">Trusted UK Brand</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">Officially incorporated builder (SIC 41202) following modern UK structural regulations.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-premium p-6 rounded-xl space-y-3 text-left">
+          <div class="text-gold w-10 h-10 bg-gold/10 rounded flex items-center justify-center border border-gold/20">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M12 16v1M10 11h2.5" /></svg>
+          </div>
+          <h3 class="text-white font-heading font-bold text-base tracking-wide">Transparent Pricing</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">Itemized cost estimations with no hidden building surprises. Complete control over budgets.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-premium p-6 rounded-xl space-y-3 text-left">
+          <div class="text-gold w-10 h-10 bg-gold/10 rounded flex items-center justify-center border border-gold/20">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+          </div>
+          <h3 class="text-white font-heading font-bold text-base tracking-wide">Skilled Professionals</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">Certified plumbers, structural engineers, bricklayers, and design support managers.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="glass-premium p-6 rounded-xl space-y-3 text-left">
+          <div class="text-gold w-10 h-10 bg-gold/10 rounded flex items-center justify-center border border-gold/20">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <h3 class="text-white font-heading font-bold text-base tracking-wide">On-Time Delivery</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">Strict adherence to structural development plans and scheduled milestone completions.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. TESTIMONIALS & GOOGLE REVIEWS SECTION -->
+  <section id="testimonials" class="py-24 bg-charcoal-light relative">
+    <div class="container mx-auto px-6 md:px-12 space-y-12">
+      <!-- Header -->
+      <div class="text-center space-y-4 max-w-2xl mx-auto scroll-reveal">
+        <span class="text-xs text-gold font-heading font-bold uppercase tracking-[0.25em] block">Our Reputation</span>
+        <h2 class="text-3xl md:text-5xl font-heading font-bold text-white tracking-tight">
+          What Our Prestigious Clients Say
+        </h2>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Read reviews from home builders and domestic developers who chose TVK Construction for their projects.
+        </p>
+      </div>
+
+      <!-- Testimonials Sliding Carousel Block -->
+      <div class="relative max-w-4xl mx-auto overflow-hidden min-h-[300px] flex items-center justify-center px-4 md:px-12 scroll-reveal">
+        <!-- Testimonial Item 1 -->
+        <div class="testimonial-slide w-full text-center space-y-6 flex flex-col items-center">
+          <!-- 5 Stars -->
+          <div class="flex text-gold justify-center space-x-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          
+          <!-- Review Content -->
+          <blockquote class="text-xl md:text-2xl font-heading font-medium italic text-white max-w-2xl leading-relaxed">
+            "TVK Construction transformed our home beautifully with excellent workmanship and timely delivery. The kitchen rear glass extension feels completely spectacular and has expanded our living space beyond limits."
+          </blockquote>
+
+          <!-- Client details -->
+          <div>
+            <span class="text-sm font-semibold tracking-wider uppercase block text-white">Elizabeth & Jeremy Sterling</span>
+            <span class="text-[10px] tracking-widest uppercase block text-gold mt-1">Home Extension Clients, Crewe</span>
+          </div>
+        </div>
+
+        <!-- Testimonial Item 2 -->
+        <div class="testimonial-slide w-full text-center space-y-6 flex flex-col items-center hidden">
+          <div class="flex text-gold justify-center space-x-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <blockquote class="text-xl md:text-2xl font-heading font-medium italic text-white max-w-2xl leading-relaxed">
+            "The level of transparency, safety metrics, and custom design supports provided during our new villa building was exemplary. Unbelievable craftsmanship that deserves five stars."
+          </blockquote>
+          <div>
+            <span class="text-sm font-semibold tracking-wider uppercase block text-white">Sir Alistair Sterling-West</span>
+            <span class="text-[10px] tracking-widest uppercase block text-gold mt-1">Bespoke House Client, Cheshire</span>
+          </div>
+        </div>
+
+        <!-- Left/Right controls -->
+        <button onclick="prevTestimonial()" class="absolute left-0 text-white/50 hover:text-gold transition-colors focus:outline-none" aria-label="Previous Testimonial">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button onclick="nextTestimonial()" class="absolute right-0 text-white/50 hover:text-gold transition-colors focus:outline-none" aria-label="Next Testimonial">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Google Reviews Premium Grid Widget -->
+      <div class="glass-premium max-w-4xl mx-auto p-6 md:p-8 rounded-xl grid grid-cols-1 md:grid-cols-12 gap-8 items-center border border-gold/15">
+        <div class="md:col-span-4 text-center md:text-left space-y-2 border-r border-charcoal-lighter md:pr-6">
+          <div class="flex items-center justify-center md:justify-start space-x-2 text-white font-heading font-bold text-2xl">
+            <span>Google Reviews</span>
+          </div>
+          <div class="flex text-gold justify-center md:justify-start space-x-1">
+            <span class="text-white text-3xl font-heading font-extrabold block mr-1 leading-none">5.0</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="text-[10px] text-gray-400 uppercase tracking-widest block font-semibold">Based on 64 domestic reviews</span>
+        </div>
+
+        <div class="md:col-span-8 flex flex-col sm:flex-row gap-6 items-center justify-around">
+          <div class="text-center sm:text-left space-y-1">
+            <span class="text-white text-sm font-semibold block">100% Verified</span>
+            <span class="text-gray-400 text-xs block">Safe client reviews via official business channels.</span>
+          </div>
+          <a href="#contact" class="bg-white/5 border border-white/10 hover:border-gold hover:text-gold text-white text-xs font-semibold uppercase tracking-wider py-3 px-6 rounded transition-colors duration-300">
+            Write a Review
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. OUR PROCESS SECTION -->
+  <section id="process" class="py-24 bg-charcoal relative">
+    <!-- Center connecting line -->
+    <div class="timeline-line"></div>
+
+    <div class="container mx-auto px-6 md:px-12 space-y-16 relative z-10">
+      
+      <!-- Header -->
+      <div class="text-center space-y-4 max-w-2xl mx-auto scroll-reveal">
+        <span class="text-xs text-gold font-heading font-bold uppercase tracking-[0.25em] block">Our Roadmap</span>
+        <h2 class="text-3xl md:text-5xl font-heading font-bold text-white tracking-tight">
+          How We Bring Visions To Reality
+        </h2>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Our meticulous 4-step structural design and building plan guarantees flawless quality with no construction delays.
+        </p>
+      </div>
+
+      <!-- Timeline steps -->
+      <div class="space-y-12 md:space-y-24">
+        
+        <!-- Step 1: Right -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative">
+          <!-- Step Number Indicator -->
+          <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full border border-gold bg-charcoal-light flex items-center justify-center text-gold font-heading font-bold z-20 text-xs hidden md:flex">01</div>
+          
+          <div class="md:col-span-5 text-left md:text-right scroll-reveal-left">
+            <div class="space-y-3">
+              <span class="text-[10px] text-gold tracking-widest font-semibold uppercase block">First Milestone</span>
+              <h3 class="text-2xl font-heading font-bold text-white tracking-wide">1. Project Consultation</h3>
+              <p class="text-gray-300 text-xs leading-relaxed max-w-lg md:ml-auto">
+                We sit down together in Crewe or virtually to understand your specific house extension or villa footprints, budget goals, timeline preferences, and structural plans.
+              </p>
+            </div>
+          </div>
+          
+          <div class="md:col-span-2 flex justify-center items-center">
+            <!-- Mobile number fallback badge -->
+            <div class="w-8 h-8 rounded-full border border-gold bg-charcoal-light flex items-center justify-center text-gold font-heading font-bold md:hidden text-xs">01</div>
+          </div>
+          
+          <div class="md:col-span-5 scroll-reveal-right">
+            <div class="glass-premium p-6 rounded-xl flex items-center space-x-4 border border-white/5">
+              <div class="text-gold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" /></svg>
+              </div>
+              <p class="text-gray-400 text-xs leading-relaxed text-left">Detailed assessment of structural scope and instant compliance advice for building regulations.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Left -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative">
+          <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full border border-gold bg-charcoal-light flex items-center justify-center text-gold font-heading font-bold z-20 text-xs hidden md:flex">02</div>
+          
+          <div class="md:col-span-5 scroll-reveal-left order-last md:order-first">
+            <div class="glass-premium p-6 rounded-xl flex items-center space-x-4 border border-white/5">
+              <div class="text-gold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
+              </div>
+              <p class="text-gray-400 text-xs leading-relaxed text-left">Coordination of custom architectural drawings, steel calculations, and local planning permits submission.</p>
+            </div>
+          </div>
+          
+          <div class="md:col-span-2 flex justify-center items-center">
+            <div class="w-8 h-8 rounded-full border border-gold bg-charcoal-light flex items-center justify-center text-gold font-heading font-bold md:hidden text-xs">02</div>
+          </div>
+          
+          <div class="md:col-span-5 text-left scroll-reveal-right">
+            <div class="space-y-3">
+              <span class="text-[10px] text-gold tracking-widest font-semibold uppercase block">Second Milestone</span>
+              <h3 class="text-2xl font-heading font-bold text-white tracking-wide">2. Planning & Design</h3>
+              <p class="text-gray-300 text-xs leading-relaxed max-w-lg">
+                We draw custom floorplans, collaborate with structural engineers, map out steel load-bearing specs, and secure required building permissions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Right -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative">
+          <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full border border-gold bg-charcoal-light flex items-center justify-center text-gold font-heading font-bold z-20 text-xs hidden md:flex">03</div>
+          
+          <div class="md:col-span-5 text-left md:text-right scroll-reveal-left">
+            <div class="space-y-3">
+              <span class="text-[10px] text-gold tracking-widest font-semibold uppercase block">Third Milestone</span>
+              <h3 class="text-2xl font-heading font-bold text-white tracking-wide">3. Execution & Construction</h3>
+              <p class="text-gray-300 text-xs leading-relaxed max-w-lg md:ml-auto">
+                Our certified building craftsmen break ground under strict safety rules, erecting timber structures, reinforcing steel beams, and laying luxury masonry works.
+              </p>
+            </div>
+          </div>
+          
+          <div class="md:col-span-2 flex justify-center items-center">
+            <div class="w-8 h-8 rounded-full border border-gold bg-charcoal-light flex items-center justify-center text-gold font-heading font-bold md:hidden text-xs">03</div>
+          </div>
+          
+          <div class="md:col-span-5 scroll-reveal-right">
+            <div class="glass-premium p-6 rounded-xl flex items-center space-x-4 border border-white/5">
+              <div class="text-gold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+              </div>
+              <p class="text-gray-400 text-xs leading-relaxed text-left">Daily structural supervision and structural checkpoint sign-offs matching all safety requirements.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4: Left -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative">
+          <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full border border-gold bg-charcoal-light flex items-center justify-center text-gold font-heading font-bold z-20 text-xs hidden md:flex">04</div>
+          
+          <div class="md:col-span-5 scroll-reveal-left order-last md:order-first">
+            <div class="glass-premium p-6 rounded-xl flex items-center space-x-4 border border-white/5">
+              <div class="text-gold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              </div>
+              <p class="text-gray-400 text-xs leading-relaxed text-left">Final client inspection walkthrough, certificates handing over, and guaranteed client-satisfaction sign-off.</p>
+            </div>
+          </div>
+          
+          <div class="md:col-span-2 flex justify-center items-center">
+            <div class="w-8 h-8 rounded-full border border-gold bg-charcoal-light flex items-center justify-center text-gold font-heading font-bold md:hidden text-xs">04</div>
+          </div>
+          
+          <div class="md:col-span-5 text-left scroll-reveal-right">
+            <div class="space-y-3">
+              <span class="text-[10px] text-gold tracking-widest font-semibold uppercase block">Fourth Milestone</span>
+              <h3 class="text-2xl font-heading font-bold text-white tracking-wide">4. Perfect Handover</h3>
+              <p class="text-gray-300 text-xs leading-relaxed max-w-lg">
+                We clean the entire site down, complete custom luxury inspections, hand over all building certificates, and celebrate the completed home space.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. FAQ ACCORDION SECTION -->
+  <section id="faq" class="py-24 bg-charcoal-light relative">
+    <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+      
+      <!-- FAQ text -->
+      <div class="lg:col-span-4 space-y-4 text-left scroll-reveal-left">
+        <span class="text-xs text-gold font-heading font-bold uppercase tracking-[0.25em] block">Common Inquiries</span>
+        <h2 class="text-3xl md:text-5xl font-heading font-bold text-white tracking-tight">
+          Inquiries Answered
+        </h2>
+        <div class="h-1 w-20 bg-gold"></div>
+        <p class="text-gray-400 text-xs leading-relaxed">
+          Read common questions regarding home construction regulations, planning permissions in England, building calculations, and TVK insurances.
+        </p>
+        <div class="pt-4">
+          <a href="#contact" class="inline-flex items-center space-x-2 text-xs font-bold text-gold uppercase tracking-wider link-gold-underline">
+            <span>Have another question? Ask here</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ Accordion (6 items) -->
+      <div class="lg:col-span-8 space-y-4 scroll-reveal-right">
+        
+        <!-- FAQ 1 -->
+        <div class="glass-premium rounded-lg overflow-hidden border border-white/5">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none select-none">
+            <span class="text-sm md:text-base font-heading font-bold text-white tracking-wide">Do you handle architectural drawings & Council Planning Permits?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+            <p class="p-6 pt-0 text-xs text-gray-300 border-t border-charcoal-lighter leading-relaxed">
+              Yes, absolutely! TVK CONSTRUCTION LTD provides full-cycle planning support. We collaborate with high-end UK architects and structural engineers to compile certified calculations, steel structural maps, and submit official applications to your local council.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="glass-premium rounded-lg overflow-hidden border border-white/5">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none select-none">
+            <span class="text-sm md:text-base font-heading font-bold text-white tracking-wide">Are you fully insured and registered in the UK?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+            <p class="p-6 pt-0 text-xs text-gray-300 border-t border-charcoal-lighter leading-relaxed">
+              Yes. We are an officially registered UK domestic building contractor under SIC Code 41202. We carry complete public liability insurance and employer's liability insurance protecting your property and all on-site building works.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="glass-premium rounded-lg overflow-hidden border border-white/5">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none select-none">
+            <span class="text-sm md:text-base font-heading font-bold text-white tracking-wide">How do you manage project pricing and payment schedules?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+            <p class="p-6 pt-0 text-xs text-gray-300 border-t border-charcoal-lighter leading-relaxed">
+              We operate under transparent, itemized contracts. The pricing is mapped to milestone completions (e.g. Groundwork, Steel/Framing, First Fix, Final Handover). Payments are made in stages only after specific structural check-offs are approved.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="glass-premium rounded-lg overflow-hidden border border-white/5">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none select-none">
+            <span class="text-sm md:text-base font-heading font-bold text-white tracking-wide">What geographic areas in England and the UK do you cover?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+            <p class="p-6 pt-0 text-xs text-gray-300 border-t border-charcoal-lighter leading-relaxed">
+              Our registered office is at 10 Minshull New Road, Crewe, England, CW1 3PD. We provide premium domestic construction, structural renovations, and modern architectural extensions across Cheshire, Staffordshire, Merseyside, and key areas of the UK.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="glass-premium rounded-lg overflow-hidden border border-white/5">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none select-none">
+            <span class="text-sm md:text-base font-heading font-bold text-white tracking-wide">How long does a typical kitchen or rear extension take?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+            <p class="p-6 pt-0 text-xs text-gray-300 border-t border-charcoal-lighter leading-relaxed">
+              A standard single-storey rear extension or open-concept kitchen remodel takes approximately 8 to 12 weeks from groundbreaking, depending on size, steel structural complications, and interior finishes. We provide an exact scheduled roadmap beforehand.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 9. BLOG & INSIGHTS SECTION -->
+  <section id="blog" class="py-24 bg-charcoal relative">
+    <div class="container mx-auto px-6 md:px-12 space-y-12">
+      
+      <!-- Header -->
+      <div class="text-center space-y-4 max-w-2xl mx-auto scroll-reveal">
+        <span class="text-xs text-gold font-heading font-bold uppercase tracking-[0.25em] block">Insights & News</span>
+        <h2 class="text-3xl md:text-5xl font-heading font-bold text-white tracking-tight">
+          Modern Building Practices & Architectural Guides
+        </h2>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Stay updated with certified domestic guidelines, design styles, and house extension structures from TVK's expert builders.
+        </p>
+      </div>
+
+      <!-- Blog Grid (3 posts) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Post 1 -->
+        <div class="glass-premium rounded-xl overflow-hidden flex flex-col justify-between border border-white/5 hover:border-gold/25 transition-all duration-300 scroll-reveal">
+          <div>
+            <div class="h-48 bg-charcoal-lighter relative overflow-hidden flex items-center justify-center">
+              <span class="text-gold font-heading font-extrabold text-7xl opacity-5">01</span>
+              <!-- Premium abstract drawing of building -->
+              <svg class="absolute w-24 h-24 text-gold/10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 21h18M9 21V9a3 3 0 016 0v12M5 21V5a2 2 0 012-2h10a2 2 0 012 2v16"/>
+              </svg>
+            </div>
+            <div class="p-6 space-y-3 text-left">
+              <span class="text-gold text-[10px] uppercase font-bold tracking-widest block">Building Regs</span>
+              <h3 class="text-lg font-heading font-bold text-white leading-snug">The Ultimate Guide to UK Building Regulations (SIC 41202)</h3>
+              <p class="text-gray-400 text-xs leading-relaxed">Understanding the fundamental structural, fire safety, and energy compliance checkpoints needed for a successful domestic house extension.</p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 text-left">
+            <a href="#contact" class="text-xs text-gold font-semibold uppercase tracking-wider hover:text-gold-accent flex items-center space-x-1">
+              <span>Read Article</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="glass-premium rounded-xl overflow-hidden flex flex-col justify-between border border-white/5 hover:border-gold/25 transition-all duration-300 scroll-reveal delay-100">
+          <div>
+            <div class="h-48 bg-charcoal-lighter relative overflow-hidden flex items-center justify-center">
+              <span class="text-gold font-heading font-extrabold text-7xl opacity-5">02</span>
+              <svg class="absolute w-24 h-24 text-gold/10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5"/>
+              </svg>
+            </div>
+            <div class="p-6 space-y-3 text-left">
+              <span class="text-gold text-[10px] uppercase font-bold tracking-widest block">Home Design</span>
+              <h3 class="text-lg font-heading font-bold text-white leading-snug">Maximizing Value: Glass Rear Extensions vs Conservatories</h3>
+              <p class="text-gray-400 text-xs leading-relaxed">Analyzing why high-end double-height glass extensions deliver higher ROI and pristine aesthetics for domestic properties in England.</p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 text-left">
+            <a href="#contact" class="text-xs text-gold font-semibold uppercase tracking-wider hover:text-gold-accent flex items-center space-x-1">
+              <span>Read Article</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="glass-premium rounded-xl overflow-hidden flex flex-col justify-between border border-white/5 hover:border-gold/25 transition-all duration-300 scroll-reveal delay-200">
+          <div>
+            <div class="h-48 bg-charcoal-lighter relative overflow-hidden flex items-center justify-center">
+              <span class="text-gold font-heading font-extrabold text-7xl opacity-5">03</span>
+              <svg class="absolute w-24 h-24 text-gold/10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 3v1m6.364 1.636l-.707.707M21 12h-1"/>
+              </svg>
+            </div>
+            <div class="p-6 space-y-3 text-left">
+              <span class="text-gold text-[10px] uppercase font-bold tracking-widest block">Renovation</span>
+              <h3 class="text-lg font-heading font-bold text-white leading-snug">Top Modern Architecture Materials to Use in 2026</h3>
+              <p class="text-gray-400 text-xs leading-relaxed">Why integrating white marble kitchen panels, dark steel framework, and natural cedar wood panel cladding is trending in the luxury UK design landscape.</p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 text-left">
+            <a href="#contact" class="text-xs text-gold font-semibold uppercase tracking-wider hover:text-gold-accent flex items-center space-x-1">
+              <span>Read Article</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 10. CONTACT SECTION (WITH MAP MOCKUP) -->
+  <section id="contact" class="py-24 bg-charcoal-light relative">
+    <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+      
+      <!-- Contact details -->
+      <div class="lg:col-span-5 space-y-6 text-left scroll-reveal-left">
+        <span class="text-xs text-gold font-heading font-bold uppercase tracking-[0.25em] block">Get In Touch</span>
+        <h2 class="text-3xl md:text-5xl font-heading font-bold text-white tracking-tight">
+          Let’s Discuss Your Dream Home
+        </h2>
+        <div class="h-1 w-20 bg-gold"></div>
+        <p class="text-gray-400 text-xs leading-relaxed">
+          Request a free quote, send blueprints, or ask about structural regulations. Our team usually reviews and replies within 24 working hours.
+        </p>
+
+        <!-- Information list -->
+        <div class="space-y-4 pt-4 text-xs">
+          <!-- Address -->
+          <div class="flex items-start space-x-4">
+            <div class="text-gold mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            </div>
+            <div>
+              <span class="text-white font-bold block mb-0.5">Office Address</span>
+              <a href="https://maps.google.com/?q=10+Minshull+New+Road,+Crewe,+England,+CW1+3PD" target="_blank" class="text-gray-400 hover:text-gold transition-colors block">
+                10 Minshull New Road, Crewe, England, CW1 3PD
+              </a>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex items-start space-x-4">
+            <div class="text-gold mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+            </div>
+            <div>
+              <span class="text-white font-bold block mb-0.5">Direct Call Line</span>
+              <a href="tel:07345952724" class="text-gray-400 hover:text-gold transition-colors block font-semibold text-sm">
+                07345952724
+              </a>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="flex items-start space-x-4">
+            <div class="text-gold mt-1 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+            </div>
+            <div>
+              <span class="text-white font-bold block mb-0.5">Corporate Email</span>
+              <a href="mailto:Aravinduk1947@gmail.com" class="text-gray-400 hover:text-gold transition-colors block">
+                Aravinduk1947@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Embedded UK Map luxury dark mockup -->
+        <div class="rounded-xl overflow-hidden border border-white/5 h-[180px] relative mt-6 select-none bg-charcoal-lighter">
+          <!-- Abstract grid lines and placeholder to create elegant dark map visual -->
+          <div class="absolute inset-0 flex flex-col justify-center items-center p-6 text-center space-y-2">
+            <div class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center text-gold border border-gold animate-bounce">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /></svg>
+            </div>
+            <span class="text-white text-xs font-bold font-heading uppercase tracking-widest block">TVK Office Location</span>
+            <span class="text-[10px] text-gray-400 block max-w-xs">10 Minshull New Road, Crewe, CW1 3PD</span>
+            <a href="https://maps.google.com/?q=10+Minshull+New+Road,+Crewe,+England,+CW1+3PD" target="_blank" class="text-[10px] text-gold font-bold hover:underline tracking-wider uppercase pt-1">Open in Google Maps &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="lg:col-span-7 scroll-reveal-right">
+        <form id="contact-form" class="glass-premium p-8 rounded-xl border border-white/5 space-y-6 text-left">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Name -->
+            <div class="space-y-1.5">
+              <label for="form-name" class="text-[10px] uppercase font-bold tracking-widest text-gray-400 block">Your Full Name *</label>
+              <input type="text" id="form-name" name="from_name" required class="w-full bg-charcoal/60 border border-white/10 rounded p-3 text-sm text-white focus:border-gold focus:outline-none transition-colors" placeholder="e.g. John Doe">
+            </div>
+            <!-- Phone -->
+            <div class="space-y-1.5">
+              <label for="form-phone" class="text-[10px] uppercase font-bold tracking-widest text-gray-400 block">Phone Number *</label>
+              <input type="tel" id="form-phone" name="from_phone" required class="w-full bg-charcoal/60 border border-white/10 rounded p-3 text-sm text-white focus:border-gold focus:outline-none transition-colors" placeholder="e.g. 07123 456789">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Email -->
+            <div class="space-y-1.5">
+              <label for="form-email" class="text-[10px] uppercase font-bold tracking-widest text-gray-400 block">Email Address *</label>
+              <input type="email" id="form-email" name="from_email" required class="w-full bg-charcoal/60 border border-white/10 rounded p-3 text-sm text-white focus:border-gold focus:outline-none transition-colors" placeholder="e.g. john@example.com">
+            </div>
+            <!-- Service Required -->
+            <div class="space-y-1.5">
+              <label for="form-service" class="text-[10px] uppercase font-bold tracking-widest text-gray-400 block">Service Required</label>
+              <select id="form-service" name="service_required" class="w-full bg-charcoal/60 border border-white/10 rounded p-3.5 text-sm text-gray-300 focus:border-gold focus:outline-none transition-colors">
+                <option value="extensions">House Extensions</option>
+                <option value="newbuild">New Home Construction</option>
+                <option value="renovation">Interior Renovation</option>
+                <option value="kitchen">Kitchen Remodeling</option>
+                <option value="roofing">Roofing Services</option>
+                <option value="other">Other Domestic Works</option>
+                <option value="other">Other Domestic Works</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="space-y-1.5">
+            <label for="form-message" class="text-[10px] uppercase font-bold tracking-widest text-gray-400 block">Your Message / Specifications *</label>
+            <textarea id="form-message" name="message" required rows="5" class="w-full bg-charcoal/60 border border-white/10 rounded p-3 text-sm text-white focus:border-gold focus:outline-none transition-colors" placeholder="Tell us about your home extensions, blueprints, or preferred dates..."></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="w-full bg-gradient-to-r from-gold to-gold-accent hover:from-gold-accent hover:to-gold-dark text-charcoal font-heading text-xs uppercase tracking-widest font-bold py-4 rounded transition-all duration-300 transform hover:-translate-y-0.5">
+            Send Inquiry message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 11. FOOTER SECTION -->
+  <footer class="bg-[#0B192E] border-t border-white/5 pt-16 pb-8 text-xs text-slate-400">
+    <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12 text-left mb-12">
+      
+      <!-- Brand & Company Details -->
+      <div class="md:col-span-4 space-y-4">
+        <a href="#" class="flex items-center space-x-3 group">
+          <div class="w-10 h-10 overflow-hidden flex items-center justify-center rounded bg-white shadow-sm transition-transform duration-300 group-hover:scale-105 border border-slate-200/20">
+            <img src="assets/logo.png" alt="TVK Construction Logo" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <span class="text-white-pure font-heading text-lg font-bold tracking-wider block leading-none">TVK</span>
+            <span class="text-[9px] text-blue-300 tracking-[0.2em] font-semibold uppercase leading-none block mt-1">CONSTRUCTION</span>
+          </div>
+        </a>
+        <p class="leading-relaxed text-slate-400 max-w-sm">
+          TVK CONSTRUCTION LTD is a premier domestic building and structural extension contractor dedicated to building high-end homes and creating trust across the UK.
+        </p>
+        <div class="text-[10px] text-slate-500 uppercase tracking-wider space-y-1">
+          <p>UK Registered Company (SIC 41202)</p>
+          <p>Crewe, Cheshire, England</p>
+        </div>
+      </div>
+
+      <!-- Quick Navigation links -->
+      <div class="md:col-span-3 space-y-4">
+        <span class="text-white-pure font-heading text-sm font-semibold uppercase tracking-wider block">Company</span>
+        <ul class="space-y-2 font-medium">
+          <li><a href="#hero" class="hover:text-blue-300 transition-colors">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-300 transition-colors">About Us</a></li>
+          <li><a href="#services" class="hover:text-blue-300 transition-colors">Our Services</a></li>
+          <li><a href="#portfolio" class="hover:text-blue-300 transition-colors">Featured Projects</a></li>
+          <li><a href="#why-choose" class="hover:text-blue-300 transition-colors">Why Choose Us</a></li>
+          <li><a href="#faq" class="hover:text-blue-300 transition-colors">FAQs</a></li>
+          <li><a href="#contact" class="hover:text-blue-300 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services List -->
+      <div class="md:col-span-3 space-y-4">
+        <span class="text-white-pure font-heading text-sm font-semibold uppercase tracking-wider block">Services</span>
+        <ul class="space-y-2 font-medium">
+          <li><a href="#services" class="hover:text-blue-300 transition-colors">New Home Construction</a></li>
+          <li><a href="#services" class="hover:text-blue-300 transition-colors">House Extensions</a></li>
+          <li><a href="#services" class="hover:text-blue-300 transition-colors">Interior Renovation</a></li>
+          <li><a href="#services" class="hover:text-blue-300 transition-colors">Kitchen Remodeling</a></li>
+          <li><a href="#services" class="hover:text-blue-300 transition-colors">Roofing Solutions</a></li>
+          <li><a href="#services" class="hover:text-blue-300 transition-colors">Structural Repairs</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact direct footer details -->
+      <div class="md:col-span-2 space-y-4">
+        <span class="text-white-pure font-heading text-sm font-semibold uppercase tracking-wider block">Connect</span>
+        <div class="space-y-3">
+          <a href="tel:07345952724" class="hover:text-blue-300 transition-colors block font-semibold text-white-pure">07345952724</a>
+          <a href="mailto:Aravinduk1947@gmail.com" class="hover:text-blue-300 transition-colors block">Aravinduk1947@gmail.com</a>
+        </div>
+        <!-- Social Icons Mockup -->
+        <div class="flex items-center space-x-3 pt-2 text-white/40">
+          <!-- Mock Facebook -->
+          <a href="#" class="hover:text-blue-300 transition-colors" aria-label="Facebook">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+          </a>
+          <!-- Mock Instagram -->
+          <a href="#" class="hover:text-blue-300 transition-colors" aria-label="Instagram">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <!-- Mock LinkedIn -->
+          <a href="#" class="hover:text-blue-300 transition-colors" aria-label="LinkedIn">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright and SIC Registration -->
+    <div class="container mx-auto px-6 md:px-12 pt-8 border-t border-white/10 flex flex-col md:flex-row md:items-center justify-between text-slate-500 gap-4">
+      <p>© 2026 TVK CONSTRUCTION LTD. All Rights Reserved. Co No: SIC 41202.</p>
+      <div class="flex space-x-6">
+        <a href="#" class="hover:text-blue-300 transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-blue-300 transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DYNAMIC FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/447345952724" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white-pure rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 wa-pulse" aria-label="Chat on WhatsApp">
+    <!-- WhatsApp SVG -->
+    <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.73-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.967C16.588 2.01 14.12 1.01 11.53 1.01 6.096 1.01 1.674 5.378 1.67 10.806c-.001 1.687.455 3.332 1.32 4.769l-.988 3.605 3.655-.966zm13.123-7.905c-.3-.15-1.772-.874-2.047-.975-.275-.101-.475-.15-.675.15-.2.3-.775.975-.95 1.175-.175.2-.35.225-.65.075-.3-.15-1.265-.467-2.41-1.485-.89-.794-1.49-1.775-1.665-2.075-.175-.3-.019-.462.13-.611.135-.135.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.675-1.625-.925-2.225-.244-.588-.491-.508-.675-.517-.175-.008-.375-.01-.575-.01-.2 0-.525.075-.8 1.012-.275.937-1.05 2.337-1.125 2.487-.075.15-.075.275.05.425.125.15 1.085 1.657 2.628 2.324.368.158.654.253.882.325.37.118.706.101.972.062.297-.044 1.772-.724 2.022-1.424.25-.7.25-1.3.175-1.425-.075-.125-.275-.2-.575-.35z"/>
+    </svg>
+  </a>
+
+  <!-- INTERACTIVE REQUEST QUOTE POPUP MODAL -->
+  <div id="quote-modal" class="fixed inset-0 z-[999] flex items-center justify-center px-4 hidden transition-all duration-300">
+    <!-- Overlay background -->
+    <div onclick="toggleQuoteModal(false)" class="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+    
+    <!-- Modal panel -->
+    <div class="glass-premium w-full max-w-lg p-8 rounded-xl relative z-10 border border-gold/30 shadow-2xl text-left scale-95 transition-transform duration-300" id="quote-modal-panel">
+      <button onclick="toggleQuoteModal(false)" class="absolute top-4 right-4 text-gray-400 hover:text-gold transition-colors focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+      </button>
+
+      <div class="space-y-2 mb-6">
+        <h3 class="text-xl md:text-2xl font-heading font-bold text-white tracking-wide">Request Detailed Estimation</h3>
+        <p class="text-gray-400 text-[10px] uppercase font-bold tracking-widest leading-relaxed">No-obligation quote for domestic building works</p>
+      </div>
+
+      <form id="modal-quote-form" class="space-y-4">
+        <!-- Input Name -->
+        <div class="space-y-1">
+          <label for="modal-name" class="text-[10px] uppercase font-bold tracking-widest text-gray-400">Full Name *</label>
+          <input type="text" id="modal-name" name="from_name" required class="w-full bg-charcoal/60 border border-white/10 rounded p-2.5 text-xs text-white focus:border-gold focus:outline-none" placeholder="John Doe">
+        </div>
+        <!-- Input Phone -->
+        <div class="space-y-1">
+          <label for="modal-phone" class="text-[10px] uppercase font-bold tracking-widest text-gray-400">Phone Number *</label>
+          <input type="tel" id="modal-phone" name="from_phone" required class="w-full bg-charcoal/60 border border-white/10 rounded p-2.5 text-xs text-white focus:border-gold focus:outline-none" placeholder="07345 952724">
+        </div>
+        <!-- Input Email -->
+        <div class="space-y-1">
+          <label for="modal-email" class="text-[10px] uppercase font-bold tracking-widest text-gray-400">Email Address *</label>
+          <input type="email" id="modal-email" name="from_email" required class="w-full bg-charcoal/60 border border-white/10 rounded p-2.5 text-xs text-white focus:border-gold focus:outline-none" placeholder="your@email.com">
+        </div>
+        <!-- Input Service -->
+        <div class="space-y-1">
+          <label for="modal-service" class="text-[10px] uppercase font-bold tracking-widest text-gray-400">Service Required</label>
+          <select id="modal-service" name="service_required" class="w-full bg-charcoal/60 border border-white/10 rounded p-3 text-xs text-gray-300 focus:border-gold focus:outline-none">
+            <option value="extensions">House Extensions</option>
+            <option value="newbuild">New Home Construction</option>
+            <option value="renovation">Interior Renovation</option>
+            <option value="kitchen">Kitchen Remodeling</option>
+            <option value="roofing">Roofing Services</option>
+            <option value="other">Other Domestic Works</option>
+          </select>
+        </div>
+        <!-- Message -->
+        <div class="space-y-1">
+          <label for="modal-message" class="text-[10px] uppercase font-bold tracking-widest text-gray-400">Short Project Brief *</label>
+          <textarea id="modal-message" name="message" required rows="3" class="w-full bg-charcoal/60 border border-white/10 rounded p-2.5 text-xs text-white focus:border-gold focus:outline-none" placeholder="Briefly describe the scale, dimensions, or target dates..."></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-gradient-to-r from-gold to-gold-accent hover:from-gold-accent hover:to-gold-dark text-charcoal font-heading text-xs uppercase tracking-widest font-bold py-3.5 rounded mt-4 transition-all duration-300 transform hover:-translate-y-0.5">
+          Request Estimation
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Dynamic Success Toast Notification -->
+  <div id="toast-success" class="fixed bottom-6 left-6 z-[9999] bg-charcoal-light border-l-4 border-gold p-4 rounded shadow-2xl flex items-start space-x-3 max-w-sm hidden transition-all duration-500 transform translate-y-10 opacity-0">
+    <div class="text-gold mt-0.5">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+    </div>
+    <div class="text-left space-y-1">
+      <span class="text-white text-xs font-heading font-bold uppercase tracking-wider block">Inquiry Submitted</span>
+      <p class="text-gray-400 text-[10px] leading-relaxed">Thank you! Your project request has been transmitted. The TVK team will review and reply within 24 working hours.</p>
+    </div>
+  </div>
+
+  <!-- EmailJS SDK Integration -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init({
+        publicKey: "ICOa112Ap8F8Bu9mM",
+      });
+    })();
+  </script>
+
+  <!-- Dynamic JS Script -->
+  <script src="app.js"></script>
+</body>
+</html>
